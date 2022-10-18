@@ -16,6 +16,9 @@ func boolish(ish interface{}) (result bool, err error) {
 		if err != nil {
 			return false, fmt.Errorf("error parsing bool: %w, value: %t", err, value)
 		}
+		if value == false {
+			return false, nil
+		}
 	case int:
 		if ish == 1 {
 			result = true
