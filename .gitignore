@@ -1,0 +1,6 @@
+/.gopath/
+/.idea/
+/.vscode/
+/bin/
+/vendor/
+/.env
